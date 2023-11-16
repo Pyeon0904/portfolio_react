@@ -2,6 +2,10 @@ import React, { useEffect } from 'react';
 import './Navbar.css';
 import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faHandshake } from '@fortawesome/free-solid-svg-icons';
+import { faListCheck } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   function animation() {
@@ -74,29 +78,29 @@ const Navbar = () => {
 
           <li className="nav-item active">
             <NavLink className="nav-link" to="/" exact>
-              <i className="fas fa-tachometer-alt"></i>Home
+              <FontAwesomeIcon icon={faHome} /> Home
             </NavLink>
           </li>
 
           <li className="nav-item">
             <NavLink className="nav-link" to="/profile" exact>
-              <i className="far fa-address-book"></i>Profile
+              <i className="far fa-address-book"></i> Profile
             </NavLink>
           </li>
 
           <li className="nav-item">
             <NavLink className="nav-link" to="/dev" exact>
-              <i className="far fa-clone"></i>Project
+              <i className="far fa-clone"></i> Project
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/activity" exact>
-              <i className="far fa-chart-bar"></i>Activity
+              <FontAwesomeIcon icon={faListCheck} /> Activity
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/contact" exact>
-              <i className="far fa-copy"></i>Contact
+              <FontAwesomeIcon icon={faHandshake} /> Contact
             </NavLink>
           </li>
         </ul>

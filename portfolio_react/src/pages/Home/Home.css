@@ -1,0 +1,24 @@
+.home-container-fluid {
+  background-color: beige;
+  width: 100%;
+  height: 100vh;
+}
+
+.animation {
+  justify-content: flex-end;
+}
+
+.home-font {
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.div-top {
+  margin-top: 5%;
+}
+
+.socialLink-div {
+  font-size: large;
+  text-align: end;
+  margin-right: 5%;
+}

@@ -7,6 +7,7 @@ import Profile from './pages/Profile/Profile';
 import Dev from './pages/Dev/Dev';
 import Home from './pages/Home/Home';
 import Navbar from './component/Navbar/Navbar';
+import Footer from './component/Footer/Footer';
 
 export default function App() {
   return (
@@ -18,12 +19,14 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/dev" element={<Dev />} />
-
             <Route path="/activity" element={<Activity />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
       </Router>
+      <div className="main">
+        <Footer />
+      </div>
     </>
   );
 }

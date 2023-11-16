@@ -3,9 +3,16 @@ import React from 'react';
 export default function Activity() {
   return (
     <div className="container">
-      <h1 className="text-center" style={{ paddingTop: '30%' }}>
-        Activity
-      </h1>
+      <h1>Activity</h1>
+      <div class="row">
+        <div class="col">1 of 2</div>
+        <div class="col">2 of 2</div>
+      </div>
+      <div class="row">
+        <div class="col">1 of 3</div>
+        <div class="col">2 of 3</div>
+        <div class="col">3 of 3</div>
+      </div>
     </div>
   );
 }
