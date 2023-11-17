@@ -22,3 +22,10 @@
   text-align: end;
   margin-right: 5%;
 }
+
+.AboutMe-Line {
+  border: 1px solid burlywood;
+  width: 12rem;
+  height: 1px;
+  margin-bottom: 12px;
+}

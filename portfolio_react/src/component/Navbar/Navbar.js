@@ -6,6 +6,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faHandshake } from '@fortawesome/free-solid-svg-icons';
 import { faListCheck } from '@fortawesome/free-solid-svg-icons';
+import Lottie from 'lottie-react';
+import logo from './logo.json';
+
+const style = {
+  height: '3%',
+  width: '3%',
+};
 
 const Navbar = () => {
   function animation() {
@@ -48,10 +55,11 @@ const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-mainbg">
+      <Lottie animationData={logo} style={style} className="animation" />
       <NavLink className="navbar-brand navbar-logo" to="/" exact>
         다예's PORTFOLIO
       </NavLink>
-
+      <Lottie animationData={logo} style={style} className="animation" />
       <button
         className="navbar-toggler"
         onClick={function () {
@@ -68,28 +76,24 @@ const Navbar = () => {
       >
         <i className="fas fa-bars text-white"></i>
       </button>
-
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
           <div className="hori-selector">
             <div className="left"></div>
             <div className="right"></div>
           </div>
-
           <li className="nav-item active">
             <NavLink className="nav-link" to="/" exact>
               <FontAwesomeIcon icon={faHome} /> Home
             </NavLink>
           </li>
-
           <li className="nav-item">
             <NavLink className="nav-link" to="/profile" exact>
               <i className="far fa-address-book"></i> Profile
             </NavLink>
           </li>
-
           <li className="nav-item">
-            <NavLink className="nav-link" to="/dev" exact>
+            <NavLink className="nav-link" to="/Project" exact>
               <i className="far fa-clone"></i> Project
             </NavLink>
           </li>

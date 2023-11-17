@@ -1,9 +1,13 @@
 import React from 'react';
+import '../global.css';
 
 export default function Activity() {
   return (
-    <div className="container">
-      <h1>Activity</h1>
+    <div className="main_layout">
+      <div className="page_title">
+        Activity
+        <div className="Title_line" />
+      </div>
       <div class="row">
         <div class="col">1 of 2</div>
         <div class="col">2 of 2</div>

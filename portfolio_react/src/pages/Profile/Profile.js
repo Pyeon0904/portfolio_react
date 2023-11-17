@@ -1,77 +1,106 @@
 import React from 'react';
+import '../global.css';
+import './Profile.css';
+import profileImage from './profileEdit.png';
+import Lottie from 'lottie-react';
+import arrowLtoR from './arrowLtoR.json';
+
+const Info = [
+  {
+    name: '김다예',
+    Email: 'dayeee5@naver.com',
+    Phone: '010-2426-9940',
+    birth: '2000.02.25',
+    education: '불곡 고등학교 (2016.03 ~ 2019.01)',
+    educationTwo: '가천대학교 컴퓨터공학사 (2022.03 ~ 2026.02)',
+    intership: '당근마켓 2025 Summer Tech Intership',
+    partTimeJob: '대형 영어학원 조교 (2022.10 ~ 2023.02)',
+  },
+];
 
 export default function Profile() {
   return (
-    <div className="container">
-        <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
-          <div className="lg:pl-20">
-            <div className="max-w-xs px-2.5 lg:max-w-none">
-              {/* <Image
-                src={portraitImage}
-                alt=""
-                sizes="(min-width: 1024px) 32rem, 20rem"
-                className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
-              /> */}
-            </div>
-          </div>
-          <div className="lg:order-first lg:row-span-2">
-            <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Spencer Sharp. I live in New York City, where I design the
-              future.
-            </h1>
-            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-              <p>
-                I’ve loved making things for as long as I can remember, and
-                wrote my first program when I was 6 years old, just two weeks
-                after my mom brought home the brand new Macintosh LC 550 that I
-                taught myself to type on.
-              </p>
-              <p>
-                The only thing I loved more than computers as a kid was space.
-                When I was 8, I climbed the 40-foot oak tree at the back of our
-                yard while wearing my older sister’s motorcycle helmet, counted
-                down from three, and jumped — hoping the tree was tall enough
-                that with just a bit of momentum I’d be able to get to orbit.
-              </p>
-              <p>
-                I spent the next few summers indoors working on a rocket design,
-                while I recovered from the multiple surgeries it took to fix my
-                badly broken legs. It took nine iterations, but when I was 15 I
-                sent my dad’s Blackberry into orbit and was able to transmit a
-                photo back down to our family computer from space.
-              </p>
-              <p>
-                Today, I’m the founder of Planetaria, where we’re working on
-                civilian space suits and manned shuttle kits you can assemble at
-                home so that the next generation of kids really <em>can</em>{' '}
-                make it to orbit — from the comfort of their own backyards.
-              </p>
-            </div>
-          </div>
-          <div className="lg:pl-20">
-            {/* <ul role="list"> */}
-              {/* <SocialLink href="#" icon={TwitterIcon}>
-                Follow on Twitter
-              </SocialLink>
-              <SocialLink href="#" icon={InstagramIcon} className="mt-4">
-                Follow on Instagram
-              </SocialLink>
-              <SocialLink href="#" icon={GitHubIcon} className="mt-4">
-                Follow on GitHub
-              </SocialLink>
-              <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
-                Follow on LinkedIn
-              </SocialLink>
-              <SocialLink
-                href="mailto:spencer@planetaria.tech"
-                icon={MailIcon}
-                className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
-              >
-                spencer@planetaria.tech
-              </SocialLink> */}
-            {/* </ul> */}
+    <div className="main_layout">
+      <div className="page_title">
+        Resume
+        <div className="Title_line" />
+      </div>
+      <div class="row">
+        <Lottie animationData={arrowLtoR} className="arrowLtoR" />
+        <div class="col">
+          <div className="resume-container">
+            {/* 연락처 테이블 */}
+            <table className="resume-table">
+              <thead>
+                <tr>
+                  <th>프로필</th>
+                  <th> </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      src={profileImage}
+                      alt={`프로필 사진 - ${Info[0].name}`}
+                      className="profile-image"
+                    />
+                  </td>
+                  <td className="profile-info">
+                    <div className="betweenLine">
+                      <strong>이 름 | </strong> {Info[0].name}
+                    </div>
+                    <div className="betweenLine">
+                      <strong>Email | </strong> {Info[0].Email}
+                    </div>
+                    <div className="betweenLine">
+                      <strong>번 호 | </strong> {Info[0].Phone}
+                    </div>
+                    <div className="betweenLine">
+                      <strong>생년월일 | </strong> {Info[0].birth}
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
+        <div class="col">
+          <div className="resume-container">
+            {/* 개인 정보 테이블 */}
+            <table className="resume-table">
+              <thead>
+                <tr>
+                  <th>항목</th>
+                  <th>내용</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>학력</td>
+                  <td>{Info[0].education}</td>
+                </tr>
+                <tr>
+                  <td class="sr-only">학력2</td>
+                  <td>{Info[0].educationTwo}</td>
+                </tr>
+                <tr>
+                  <td>경력</td>
+                  <td>{Info[0].intership}</td>
+                </tr>
+                <tr>
+                  <td>아르바이트</td>
+                  <td>{Info[0].partTimeJob}</td>
+                </tr>
+                <tr>
+                  <td className="skills">기술 스킬</td>
+                  <td>HTML, CSS, JavaScript, React, Node.js</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 import '../global.css';
 
-export default function Contact() {
+export default function Project() {
   return (
     <div className="main_layout">
       <div className="page_title">
-        Contact
+        Project
         <div className="Title_line" />
       </div>
       <div class="row">
