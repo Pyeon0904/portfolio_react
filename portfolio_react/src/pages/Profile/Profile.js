@@ -37,9 +37,9 @@ export default function Profile() {
       </div>
       <div class="row">
         <Lottie animationData={arrowLtoR} className="arrowLtoR" />
+        {/* 사진 & 기본 정보 (Table) */}
         <div class="col">
           <div className="resume-container">
-            {/* 연락처 테이블 */}
             <table className="resume-table">
               <thead>
                 <tr>
@@ -75,11 +75,12 @@ export default function Profile() {
             </table>
           </div>
         </div>
+        {/* 학력, 경력 등 테이블 */}
         <div class="row">
+          <div class="col"></div>
           <div class="col">
-            <div className="resume-container">
-              {/* 개인 정보 테이블 */}
-              <table className="resume-table">
+            <div className="experience-container">
+              <table className="experience-table">
                 <thead>
                   <tr>
                     <th>항목</th>
@@ -111,9 +112,10 @@ export default function Profile() {
               </table>
             </div>
           </div>
+          {/* 경험 테이블 */}
           <div class="col">
-            <div className="experience-container">
-              <table className="experience-table">
+            <div className="result-container">
+              <table className="result-table">
                 <thead>
                   <tr>
                     <th>분류</th>
@@ -161,52 +163,52 @@ export default function Profile() {
           </div>
         </div>
       </div>
+      {/* 자기소개서 파트 */}
       <div className="intro-bg">
         <div className="intro_title">
           Introduce
           <div className="Title_line" />
-          <div class="row">
-            <div class="col">
-              <div className="intro-list">
-                <article class="message is-warning">
-                  <div class="message-header">
-                    <p>성장 과정</p>
-                    <button class="delete" aria-label="delete"></button>
-                  </div>
-                  <div class="message-body">
-                    저는 어릴 때부터 호기심 가득한 성격으로 인해 항상 새로운
-                    것을 배우고 탐구하는 것을 즐겼습니다. 성실히 학업에 임하고,
-                    다양한 동아리 활동을 통해 리더십을 기르고 친구들과 협력하는
-                    기회를 가졌습니다.
-                  </div>
-                </article>
-                <article class="message is-warning">
-                  <div class="message-header">
-                    <p>입사 지원동기</p>
-                    <button class="delete" aria-label="delete"></button>
-                  </div>
-                  <div class="message-body">
-                    IT 기업에서의 입사에 대한 동기는 저의 열정과 관련이
-                    깊습니다. 저는 현재의 기술적 흐름을 이해하고, 신기술을 통해
-                    사회와 비즈니스에 기여하고 싶어 합니다. 귀사는 혁신적인
-                    프로젝트와 글로벌 영향력을 가지고 있으며, 이를 통해 제
-                    역량을 향상시키고 성장할 수 있는 최고의 장소라고 생각합니다.
-                  </div>
-                </article>
-                <article class="message is-warning">
-                  <div class="message-header">
-                    <p>포부 및 장래 계획</p>
-                    <button class="delete" aria-label="delete"></button>
-                  </div>
-                  <div class="message-body">
-                    저의 포부는 끊임없이 성장하며 문제를 해결하고 혁신적인
-                    솔루션을 개발하는 것입니다. 저의 기술 분야에서의 전문성을
-                    더욱 강화하고, 혁신적인 프로젝트에 참여하며 꾸준히 성장 할
-                    것이고, 사회와 비즈니스에 가치를 창출하는 일에 헌신하고자
-                    합니다.
-                  </div>
-                </article>
-              </div>
+        </div>
+        <div class="row" className="intro-scope">
+          <div class="col">
+            <div className="intro-list">
+              <article class="message is-warning">
+                <div class="message-header">
+                  <p>성장 과정</p>
+                  <button class="delete" aria-label="delete"></button>
+                </div>
+                <div class="message-body">
+                  저는 어릴 때부터 호기심 가득한 성격으로 인해 항상 새로운 것을
+                  배우고 탐구하는 것을 즐겼습니다. 성실히 학업에 임하고, 다양한
+                  동아리 활동을 통해 리더십을 기르고 친구들과 협력하는 기회를
+                  가졌습니다.
+                </div>
+              </article>
+              <article class="message is-warning">
+                <div class="message-header">
+                  <p>입사 지원동기</p>
+                  <button class="delete" aria-label="delete"></button>
+                </div>
+                <div class="message-body">
+                  IT 기업에서의 입사에 대한 동기는 저의 열정과 관련이 깊습니다.
+                  저는 현재의 기술적 흐름을 이해하고, 신기술을 통해 사회와
+                  비즈니스에 기여하고 싶어 합니다. 귀사는 혁신적인 프로젝트와
+                  글로벌 영향력을 가지고 있으며, 이를 통해 제 역량을 향상시키고
+                  성장할 수 있는 최고의 장소라고 생각합니다.
+                </div>
+              </article>
+              <article class="message is-warning">
+                <div class="message-header">
+                  <p>포부 및 장래 계획</p>
+                  <button class="delete" aria-label="delete"></button>
+                </div>
+                <div class="message-body">
+                  저의 포부는 끊임없이 성장하며 문제를 해결하고 혁신적인
+                  솔루션을 개발하는 것입니다. 저의 기술 분야에서의 전문성을 더욱
+                  강화하고, 혁신적인 프로젝트에 참여하며 꾸준히 성장 할 것이고,
+                  사회와 비즈니스에 가치를 창출하는 일에 헌신하고자 합니다.
+                </div>
+              </article>
             </div>
           </div>
         </div>

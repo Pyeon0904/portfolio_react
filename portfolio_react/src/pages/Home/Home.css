@@ -29,3 +29,21 @@
   height: 1px;
   margin-bottom: 12px;
 }
+
+.home_title_L {
+  font-size: x-large;
+  padding-bottom: 5%;
+  font-weight: 1200;
+  color: black;
+}
+
+.home_title_R {
+  font-size: x-large;
+  padding-bottom: 5%;
+  font-weight: 900;
+  color: white;
+}
+
+.hero is-warning {
+  width: 50%;
+}

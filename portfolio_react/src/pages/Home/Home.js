@@ -18,21 +18,26 @@ export default function Home() {
         <div className="div-top" class="row">
           <div class="col">
             <section class="hero is-warning">
-              <section class="section is-medium">
-                <h1>About Me</h1>
-                <div className="AboutMe-Line" />
+              <section class="section is-large">
+                <h1 className="home_title_L">
+                  안녕하세요 프로트엔드 개발자 김다예입니다.
+                </h1>
                 <h2 class="subtitle">
-                  A simple container to divide your page into{' '}
-                  <strong>sections</strong>, like the one you're currently
-                  reading.
+                  <strong>혁신적인 솔루션</strong>을 만들어내는{' '}
+                  <strong>열정적인 개발자</strong>가 되기 위해 끊임없이
+                  도전합니다.
                 </h2>
               </section>
             </section>
           </div>
           <div class="col">
             <section class="hero is-success">
-              <section class="section is-medium">
-                <h1 class="title">저의 발자취를 소개합니다.</h1>
+              <section class="section is-large">
+                <h1 class="home_title_R">저의 여정을 소개합니다.</h1>
+                <h2 class="subtitle">
+                  앞으로도 지속될 이 여정은 저의 <strong>자부심</strong>과{' '}
+                  <strong>용기</strong>가 될 것 입니다
+                </h2>
                 <div className="socialLink-div">
                   <SocialLinks />
                 </div>
@@ -52,13 +57,3 @@ export default function Home() {
     </>
   );
 }
-
-// {/* <div class="row">
-//   <div class="col">1 of 2</div>
-//   <div class="col">2 of 2</div>
-// </div>
-// <div class="row">
-//   <div class="col">1 of 3</div>
-//   <div class="col">2 of 3</div>
-//   <div class="col">3 of 3</div>
-// </div> */}

@@ -1,0 +1,28 @@
+/* Proj2.css */
+
+.proj2 {
+  background-color: #4682b4; /* 강청색(진한 색상) */
+  border: 2px solid #2e8b57; /* 암녹색 */
+  border-radius: 12px;
+  overflow: hidden; /* 이미지를 컨테이너에 맞게 잘라주는 속성 */
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 효과 추가 */
+}
+
+.proj2-image {
+  width: 100%;
+  height: auto;
+}
+
+.proj2-content {
+  padding: 20px;
+}
+
+.proj2 h2 {
+  color: #8b4513; /* 갈색(진한 색상) */
+}
+
+.proj2 p {
+  color: #556b2f; /* 어두운 올리브 그린 */
+  line-height: 1.6;
+}

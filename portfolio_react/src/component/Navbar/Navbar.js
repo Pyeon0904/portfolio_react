@@ -5,7 +5,6 @@ import $ from 'jquery';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faHandshake } from '@fortawesome/free-solid-svg-icons';
-import { faListCheck } from '@fortawesome/free-solid-svg-icons';
 import Lottie from 'lottie-react';
 import logo from './logo.json';
 
@@ -93,17 +92,23 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/Project" exact>
-              <i className="far fa-clone"></i> Project
+            <NavLink className="nav-link" to="/Experience" exact>
+              <i className="far fa-clone"></i> Experience
             </NavLink>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <NavLink className="nav-link" to="/activity" exact>
               <FontAwesomeIcon icon={faListCheck} /> Activity
             </NavLink>
-          </li>
+          </li> */}
           <li className="nav-item">
-            <NavLink className="nav-link" to="/contact" exact>
+            <NavLink
+              className="nav-link"
+              to="https://open.kakao.com/o/scenbLSf"
+              target="_blank" // 새 창이 띄워지도록
+              rel="noopener noreferrer" // 보안 상의 이슈 방지
+              exact
+            >
               <FontAwesomeIcon icon={faHandshake} /> Contact
             </NavLink>
           </li>

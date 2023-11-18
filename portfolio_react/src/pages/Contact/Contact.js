@@ -2,21 +2,5 @@ import React from 'react';
 import '../global.css';
 
 export default function Contact() {
-  return (
-    <div className="main_layout">
-      <div className="page_title">
-        Contact
-        <div className="Title_line" />
-      </div>
-      <div class="row">
-        <div class="col">1 of 2</div>
-        <div class="col">2 of 2</div>
-      </div>
-      <div class="row">
-        <div class="col">1 of 3</div>
-        <div class="col">2 of 3</div>
-        <div class="col">3 of 3</div>
-      </div>
-    </div>
-  );
+  return <div className="main_layout"></div>;
 }

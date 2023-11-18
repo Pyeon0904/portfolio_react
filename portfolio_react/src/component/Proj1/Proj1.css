@@ -1,0 +1,26 @@
+.proj1 {
+  background-color: #ffe4b5; /* 미색(베이지) */
+  border: 2px solid #f08080; /* 연한 적색 */
+  border-radius: 12px;
+  overflow: hidden; /* 이미지를 카드에 맞게 잘라주는 속성 */
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+}
+
+.proj1-image {
+  width: 100%;
+  height: auto;
+}
+
+.proj1-content {
+  padding: 20px;
+}
+
+.proj1 h2 {
+  color: #ff6347; /* 토마토 */
+}
+
+.proj1 p {
+  color: #696969; /* 짙은 회색 */
+  line-height: 1.6;
+}
