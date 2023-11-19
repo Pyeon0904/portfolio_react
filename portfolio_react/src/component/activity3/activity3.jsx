@@ -17,28 +17,29 @@ const Activity3 = () => {
         </div>
         <div className="col">
           <div className="activity3-content">
-            <h2>IoT 보안 솔루션 개발</h2>
+            <h2>SW 융합 해커톤 대회</h2>
             <p>
-              <strong>진행 기간:</strong> 2024.10 ~ 2024.12
+              <strong>진행 기간:</strong> 2024.08.25 ~ 08.27
             </p>
             <p>
-              <strong>사용한 기술 스택:</strong> Java, HTTP
+              <strong>사용한 기술 스택:</strong> HTML, CSS, JavaScript, React
             </p>
             <p>
-              <strong>개요:</strong> IoT 디바이스의 증가로 인해 보안 위협도
-              증가의 문제를 해결하고자 위협을 탐지하고 대응하는 방법 설계
+              <strong>개요:</strong> 무박 3일 동안 디지털 신기술 기반 SW융합
+              제품 또는 서비스 개발, 사회문제 해결을 위한 SW융합 제품 서비스
+              개발, 선박 운항 데이터를 활용한 신서비스 기획 및 서비스 개발
             </p>
             <p>
-              <strong>나의 역할:</strong> IoT 보안 솔루션의 프로토타입을
-              개발하고 시연함으로써 제안한 보안 시나리오의 실용성을 입증
+              <strong>나의 역할:</strong> UI/UX 디자인을 개선하여 서비스의
+              친화성을 향상, 서비스의 품질을 보증하기 위해 테스트 전략을
+              개발하고 실행
             </p>
             <p>
-              <strong>강조할 점:</strong> 개발한 시나리오나 솔루션이 실제 보안
-              위험을 탐지하고 예방, 테스트 결과나 예시를 통해 효과성을 입증
+              <strong>강조할 점:</strong> 디지털 융합을 통해 지역 디지털
+              생태계에 이바지
             </p>
             <p>
-              <strong>성과:</strong> 다양한 전문가 및 기업과 연결될 수 있는
-              기회를 얻음으로써 네트워크를 확장하고 협력 가능성을 모색
+              <strong>성과:</strong>우수상 입상
             </p>
           </div>
         </div>

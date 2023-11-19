@@ -31,19 +31,48 @@
 }
 
 .home_title_L {
-  font-size: x-large;
+  font-size: xx-large;
   padding-bottom: 5%;
   font-weight: 1200;
   color: black;
 }
 
+.home_subTitle_L {
+  font-size: xx-large;
+  padding-bottom: 5%;
+  font-weight: 1200;
+  color: white;
+}
+
 .home_title_R {
-  font-size: x-large;
+  font-size: xx-large;
   padding-bottom: 5%;
   font-weight: 900;
+  color: black;
+}
+.home_title_R2 {
+  font-size: xx-large;
+  padding-bottom: 5%;
+  font-weight: 900;
+  color: black;
+  text-align: end;
+}
+
+.home_subTitle_R {
+  font-size: xx-large;
+  padding-bottom: 5%;
+  font-weight: 1200;
   color: white;
 }
 
 .hero is-warning {
   width: 50%;
+}
+
+.term-contents {
+  padding-bottom: 50%;
+}
+
+.term-contents1 {
+  padding-bottom: 20%;
 }

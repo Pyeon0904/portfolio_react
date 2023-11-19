@@ -1,8 +1,8 @@
 /* Proj2.css */
 
 .proj2 {
-  background-color: #4682b4; /* 강청색(진한 색상) */
-  border: 2px solid #2e8b57; /* 암녹색 */
+  background-color: #ffe4b5; /* 미색(베이지) */
+  border: 2px solid #f08080; /* 연한 적색 */
   border-radius: 12px;
   overflow: hidden; /* 이미지를 컨테이너에 맞게 잘라주는 속성 */
   max-width: 400px;
@@ -16,13 +16,14 @@
 
 .proj2-content {
   padding: 20px;
+  font-size: x-large;
 }
 
 .proj2 h2 {
-  color: #8b4513; /* 갈색(진한 색상) */
+  color: #ff6347; /* 갈색(진한 색상) */
 }
 
 .proj2 p {
-  color: #556b2f; /* 어두운 올리브 그린 */
+  color: #696969; /* 짙은 회색 */
   line-height: 1.6;
 }

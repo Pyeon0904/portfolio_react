@@ -4,12 +4,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBloggerB } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import './SocialLink.css';
 
 const SocialLinks = () => {
   return (
     <div className="lg:pl-20">
-      <ul>
-        <li className="mb-4">
+      <ul className="SocialLink_text">
+        <li className="mb-4 SocialLink_text">
           <NavLink
             className="text-black hover:underline"
             to="https://mail.google.com/"

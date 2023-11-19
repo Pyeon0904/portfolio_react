@@ -1,8 +1,8 @@
 /* Proj3.css */
 
 .proj3 {
-  background-color: #7b68ee; /* Royal Blue */
-  border: 2px solid #4169e1; /* Royal Blue (진한 색상) */
+  background-color: #ffe4b5; /* 미색(베이지) */
+  border: 2px solid #f08080; /* 연한 적색 */
   border-radius: 12px;
   overflow: hidden; /* 이미지를 컨테이너에 맞게 잘라주는 속성 */
   max-width: 400px;
@@ -16,13 +16,14 @@
 
 .proj3-content {
   padding: 20px;
+  font-size: x-large;
 }
 
 .proj3 h2 {
-  color: #8a2be2; /* Blue Violet (진한 색상) */
+  color: #ff6347; /* 갈색(진한 색상) */
 }
 
 .proj3 p {
-  color: #483d8b; /* Dark Slate Blue */
+  color: #696969; /* 짙은 회색 */
   line-height: 1.6;
 }
